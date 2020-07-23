@@ -1,0 +1,10 @@
+.videoContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 576px) {
+  .videoContainer {
+    width: 100%;
+  }
+}

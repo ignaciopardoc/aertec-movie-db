@@ -1,0 +1,35 @@
+nav {
+  width: 100vw;
+  background-color: #032541;
+  height: 100px;
+}
+
+.logoDiv {
+  display: flex;
+}
+
+.searchDiv {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  border-top: 0px !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+}
+
+.form-control:focus {
+  box-shadow: unset !important;
+  border-color: transparent !important;
+  border-bottom: #b53f2a 3px solid !important;
+}
+
+.languageDiv {
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
