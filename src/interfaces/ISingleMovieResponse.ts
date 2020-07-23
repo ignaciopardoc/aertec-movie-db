@@ -30,7 +30,7 @@ export default interface ISingleMovieResponse {
   videos: { results: IVideo[] };
   vote_average: number;
   vote_count: number;
-  overview: string
+  overview: string;
 }
 
 interface IGenre {

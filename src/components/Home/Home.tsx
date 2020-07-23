@@ -33,8 +33,8 @@ const Home = (props: TProps) => {
           (a: IApiResponse, b: IApiResponse) => b.popularity - a.popularity
         )
       );
-    } else{
-      props.setMovies([])
+    } else {
+      props.setMovies([]);
     }
   };
 

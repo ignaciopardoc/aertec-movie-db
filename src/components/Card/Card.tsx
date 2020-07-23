@@ -28,32 +28,32 @@ const Card = (props: TProps) => {
   return (
     <div className="col-md-4 col-12" key={props.movie.id}>
       <Link to={`/detail/${props.movie.id}`}>
-          <div
-            className="card mt-5 movieCardDiv"
-            style={{
-              backgroundImage: backgroundImage,
-            }}
-          >
-            <div className="p-3 overlay">
-              <div className="row topCardDiv">
-                <div className="col-5">
-                  <h5>{props.movie.title}</h5>
-                </div>
-                <div className="col-5">
-                  <h5>
-                    {props.movie.vote_average}
-                    <FontAwesomeIcon
-                      className="ml-2"
-                      icon={faStar}
-                    ></FontAwesomeIcon>
-                  </h5>
-                </div>
-                <div className="col-2">
-                  <h5>{releaseDate}</h5>
-                </div>
+        <div
+          className="card mt-5 movieCardDiv"
+          style={{
+            backgroundImage: backgroundImage,
+          }}
+        >
+          <div className="p-3 overlay">
+            <div className="row topCardDiv">
+              <div className="col-5">
+                <h5>{props.movie.title}</h5>
+              </div>
+              <div className="col-5">
+                <h5>
+                  {props.movie.vote_average}
+                  <FontAwesomeIcon
+                    className="ml-2"
+                    icon={faStar}
+                  ></FontAwesomeIcon>
+                </h5>
+              </div>
+              <div className="col-2">
+                <h5>{releaseDate}</h5>
               </div>
             </div>
           </div>
+        </div>
       </Link>
     </div>
   );

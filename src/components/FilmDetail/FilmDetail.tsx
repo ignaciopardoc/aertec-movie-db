@@ -4,7 +4,7 @@ import Axios from "axios";
 import { API_URL_SINGLE, API_KEY } from "../../utils/API_KEY";
 import { connect } from "react-redux";
 import ISingleMovieResponse from "../../interfaces/ISingleMovieResponse";
-import './style.css'
+import "./style.css";
 
 import Youtube from "react-youtube";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +17,7 @@ interface IGlobalProps {
 
 interface IProps {}
 
-type TProps = IGlobalProps & IProps
+type TProps = IGlobalProps & IProps;
 
 const FilmDetail = (props: TProps) => {
   const [filmData, setFilmData] = useState<ISingleMovieResponse | undefined>(
@@ -47,9 +47,17 @@ const FilmDetail = (props: TProps) => {
         <div className="card p-5">
           <div className="row">
             <div className="col-md-6 col-12">
-              {filmData !== undefined && filmData?.videos?.results[0]?.key !== undefined &&(
-                <Youtube containerClassName="videoContainer" videoId={filmData?.videos.results[0].key ? filmData?.videos.results[0].key : undefined} />
-              )}
+              {filmData !== undefined &&
+                filmData?.videos?.results[0]?.key !== undefined && (
+                  <Youtube
+                    containerClassName="videoContainer"
+                    videoId={
+                      filmData?.videos.results[0].key
+                        ? filmData?.videos.results[0].key
+                        : undefined
+                    }
+                  />
+                )}
             </div>
             <div className="col-md-6 col-12">
               <h3>{filmData?.title}</h3>
@@ -72,11 +80,7 @@ const FilmDetail = (props: TProps) => {
   );
 };
 
-const mapStateToProps = ({
-  
-  language,
-}: IStore): IGlobalProps => ({
-
+const mapStateToProps = ({ language }: IStore): IGlobalProps => ({
   language,
 });
 

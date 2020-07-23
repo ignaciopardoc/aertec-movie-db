@@ -1,4 +1,3 @@
-
 ## Explanation
 
 The App itself is very simple.
